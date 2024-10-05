@@ -1,0 +1,41 @@
+* {
+    font-family: 'Consolas';
+}
+
+#pageTitle {
+    font-size: xx-large;
+    font-weight: bolder;
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 3%;
+}
+
+form {
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+form #taskBox {
+    font-size: medium;
+    padding: 10px;
+}
+
+form #taskSubmit {
+    font-size: medium;
+    padding: 10px;
+}
+
+ul {
+    width: fit-content;
+    list-style: none;
+    text-align: left;
+    margin: 0 auto;
+}
+
+li {
+    padding-top: 3%;
+}
+
+li:hover {
+    background-color: whitesmoke;
+}
