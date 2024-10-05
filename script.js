@@ -15,12 +15,15 @@ form.addEventListener('submit', (e) => {
     if (taskContent.length !== 0) {
         taskItem.innerHTML = taskContent
         taskList.append(taskItem)
+        form.reset()
     } else {
         alert('cannot add an empty task')
     }
 
     taskItem.addEventListener('click', () => {
-        taskItem.style.textDecoration = 'line-through'
+        if (taskItem.style.textDecoration === 'line-through') {
+            taskItem.style.textDecoration = 'none'
+        } else taskItem.style.textDecoration = 'line-through'
     })
 
     taskItem.addEventListener('dblclick', () => {
