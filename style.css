@@ -1,5 +1,7 @@
 * {
     font-family: 'Consolas';
+    margin: 0;
+    padding: 0;
 }
 
 #pageTitle {
@@ -8,6 +10,7 @@
     text-align: center;
     margin-top: 5%;
     margin-bottom: 3%;
+    text-shadow: 1px 1px 1px grey;
 }
 
 form {
@@ -18,6 +21,8 @@ form {
 form #taskBox {
     font-size: medium;
     padding: 10px;
+    width: 300px;
+    border-radius: 5px;
 }
 
 form #taskSubmit {
@@ -32,8 +37,10 @@ ul {
     margin: 0 auto;
 }
 
-li {
-    padding-top: 3%;
+ul li {
+    border-radius: 5px;
+    padding: 10px;
+    user-select: none;
 }
 
 li:hover {
